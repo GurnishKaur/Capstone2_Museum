@@ -1,0 +1,532 @@
+/* Main styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+/* Header and Slideshow Styles */
+header {
+    position: relative;
+    width: 100%;
+    height: 60vh; /* Adjust height as needed */
+    overflow: hidden;
+}
+
+.slideshow-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.mySlides {
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.mySlides img {
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 50px 20px;
+    text-align: center;
+    background: papayawhip;
+}
+
+.about-us h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+}
+
+.about-us h2 {
+    font-size: 2em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.team, .notable-exhibits, .testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-member, .exhibit {
+    width: 200px;
+    text-align: center;
+}
+
+.team-member img, .exhibit img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex: 1;
+    margin-right: 20px;
+    text-align: center; /* Center align text */
+}
+
+.footer-left h3, .footer-center h3, .footer-right h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.footer-center .social-links {
+    margin-top: 10px;
+}
+
+.footer-center .social-links .social-icon {
+    display: inline-block;
+    font-size: 1.5em;
+    color: #fff;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.footer-center .social-links .social-icon:hover {
+    transform: scale(1.2);
+}
+
+.footer-right ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-right ul li {
+    margin-bottom: 10px;
+}
+
+.footer-right ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+hr {
+    border-color: #555;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 0.9em;
+    color: #ccc;
+    width: 100%;
+}
+
+/* Chatbot Styles */
+.chatbot-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.chatbot-widget.minimized .chatbot-expanded {
+    display: none; /* Hide expanded chatbot content initially */
+}
+
+.chatbot-toggle-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.girl-photo {
+    width: 20px; /* Adjust width as needed */
+    height: 20px; /* Adjust height as needed */
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.chatbot-icon {
+    margin-right: 10px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left, .footer-center, .footer-right {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+/* Upcoming Events Section */
+.upcoming-events {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.upcoming-events .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.upcoming-events h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.event {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.event h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.event-date-time {
+    color: #666;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.event-description {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.event-description video {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+/* Educational Resources Section */
+.educational-resources {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.educational-resources .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.educational-resources h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.resource {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.resource h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.resource p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+/* Membership or Support Section */
+.membership-support {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.membership-support .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.membership-support h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.membership-info,
+.support-info {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.info-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-content img {
+    max-width: 40%;
+    border-radius: 8px;
+}
+
+.info-text {
+    width: 55%;
+    padding: 0 20px;
+}
+
+.info-text h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.info-text p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.info-text ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.info-text ul li {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+.visitor-feedback {
+    position: relative;
+    overflow: hidden;
+    height: 60vh; /* Adjust the height as needed */
+}
+
+.video-container {
+    position: relative;
+    height: 100%; /* Ensure it covers the entire height */
+    width: 100%; /* Ensure it covers the entire width */
+    overflow: hidden;
+}
+
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    color: #fff; /* Text color for contrast */
+    padding: 20px; /* Adjust padding as needed */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.reviews {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for reviews */
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.review {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.review:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.review-info {
+    margin-bottom: 15px;
+}
+
+.review-rating {
+    font-size: 2em;
+    color: #ffc107; /* Yellow color for stars */
+    margin-bottom: 5px;
+}
+
+.review-text {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #fff; /* Text color for contrast */
+    margin-bottom: 10px;
+}
+
+.review-author {
+    font-style: italic;
+    color: #ccc; /* Lighter color for author */
+}
+.team {
+    display: flex;
+    flex-direction: row; /* Align items horizontally */
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-member {
+    width: 200px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Maintain aspect ratio */
+    border-radius: 50%; /* Ensures round corners */
+    object-fit: cover; /* Maintain image aspect ratio */
+}

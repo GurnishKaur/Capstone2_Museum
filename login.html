@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Museum</title>
+    <link rel="stylesheet" href="login-styles.css"> <!-- Link to your CSS file -->
+    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpeg" alt="Museum Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="events.html">Upcoming Events</a></li>
+            </ul>
+        </nav>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="images/image1.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/image2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/image3.jpg" style="width:100%">
+            </div>
+        </div>
+    </header>
+    <div class="login-container">
+        <div class="login-form">
+            <h2>Login</h2>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="additional-links">
+                <a href="registration.html">Register New Account</a>
+                <a href="forgot-password.html">Forgot Password?</a>
+            </div>
+        </div>
+    </div>
+    
+    
+</div>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@museum.com</p>
+                    <p>Phone: +1234567890</p>
+                    <p>Address: 123 Museum St, City, Country</p>
+                </div>
+                <div class="footer-center">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="exhibit.html">Exhibits</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="login.html">Membership</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright">
+                <p>&copy; 2024 Museum Name. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Minimized chatbot widget -->
+ <div class="chatbot-widget minimized" id="chatbot-widget">
+    <button class="chatbot-toggle-btn" onclick="toggleChatbot()">
+        <img src="images/woman.png" alt="Girl Photo" class="girl-photo">
+        <span class="chatbot-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle">
+                <path d="M21 12a9 9 0 0 1-9 9 9 9 0 0 1-9-9 9 9 0 0 1 9-9 9 9 0 0 1 9 9zm-9 2h-1l-2 2-1 1a2.5 2.5 0 0 0-.5 1.5V17l-1 3 3-1h1l2 1v-1l1-3-3-2z"></path>
+            </svg>
+        </span>
+        How can I help you today?
+    </button>
+    <!-- This will be replaced with the chatbot widget code when expanded -->
+    <div class="chatbot-expanded">
+        <iframe src="https://example-chatbot-service.com/chatbot" frameborder="0" style="border: none; width: 350px; height: 500px;"></iframe>
+    </div>
+</div>
+</body>
+</html>
+
+
